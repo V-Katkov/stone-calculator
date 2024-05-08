@@ -4,24 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone Calculator v1</title>
+    <title>Stone Calculator v1.2</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>🗿 Stone calculator v1</h1>
-            <input id="stoneHeight" type="number" placeholder="Висота">
-            <input id="stoneWidth" type="number" placeholder="Ширина">
-            <input id="stoneWeight" type="number" placeholder="Товщина">
+            <input class='getArea' id="getHeight" type="number" placeholder="Висота">
+            <input class='getArea' id="getWidth" type="number" placeholder="Ширина">
+            <input class='getArea' id="getWeight" type="number" placeholder="Товщина">
         <button id="submitBtn" type="button">Розрахувати</button>
         <div class="info">
-            <div class='info-item' id="resultFace"></div>
-            <div class='info-item' id="resultFace2"></div>
-            <div class='info-item' id="resultTop"></div>
-            <div class='info-item' id="resultLeft"></div>
-            <div class='info-item' id="resultRight"></div>
-            <div class='info-item' id="result"></div>
+            <div class='info-item'>
+                <input type="checkbox" checked id="checkFace1">
+                <span class='info-item__text' id="resultFace1"></span>
+            </div>
+            <div class='info-item'>
+                <input type="checkbox" checked id="checkFace2">
+                <span class='info-item__text' id="resultFace2"></span>
+            </div>
+            <div class='info-item'>
+                <input type="checkbox" checked id="checkLeft">
+                <span class='info-item__text' id="resultLeft"></span>
+            </div>
+            <div class='info-item'>
+                <input type="checkbox" checked id="checkRight">
+                <span class='info-item__text' id="resultRight"></span>
+            </div>
+            <div class='info-item'>
+                <input type="checkbox" checked id="checkTop">
+                <span class='info-item__text' id="resultTop"></span>
+            </div>
+            <div class='info-item'>
+                <input type="checkbox" id="checkBottom">
+                <span class='info-item__text' id="resultBottom"></span>
+            </div>
+            <div class='info-item'>
+                <span class='info-item__text' id="result"></span>
+            </div>
         </div>
     </div>
 </body>
