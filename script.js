@@ -27,6 +27,14 @@ window.addEventListener('click', () => {
         left: document.getElementById('checkLeft'),
         right: document.getElementById('checkRight'),
     }
+    const size = {
+        face1: document.getElementById('sizeFace1'),
+        face2: document.getElementById('sizeFace2'),
+        top: document.getElementById('sizeTop'),
+        bottom: document.getElementById('sizeBottom'),
+        left: document.getElementById('sizeLeft'),
+        right: document.getElementById('sizeRight'),
+    }
 
     const generalResult = () => {
         let summ = 0;
@@ -51,12 +59,18 @@ window.addEventListener('click', () => {
         return summ.toFixed(3);
     }
 
+    size.face1.innerHTML = `<span>${get.width}см. х ${get.height}см.</span>`;
+    size.face2.innerHTML = `<span>${get.width}см. х ${get.height}см.</span>`;
+    size.top.innerHTML = `<span>${get.width}см. х ${get.weight}см.</span>`;
+    size.bottom.innerHTML = `<span>${get.width}см. х ${get.weight}см.</span>`;
+    size.left.innerHTML = `<span>${get.height}см. х ${get.weight}см.</span>`;
+    size.right.innerHTML = `<span>${get.height}см. х ${get.weight}см.</span>`;
 
-    result.face1.innerHTML = `<span>Лице 1: ${get.width}см. х ${get.height}см.</span> <b>${stoneFace}кв.</b>`;
-    result.face2.innerHTML = `<span>Лице 2: ${get.width}см. х ${get.height}см.</span> <b>${stoneFace}кв.</b>`;
-    result.left.innerHTML = `<span>Лобік бік 1: ${get.height}см. х ${get.weight}см.</span> <b>${stoneSide}кв.</b>`;
-    result.right.innerHTML = `<span>Лобік бік 2: ${get.height}см. х ${get.weight}см.</span> <b>${stoneSide}кв.</b>`;
-    result.top.innerHTML = `<span>Лобік верхній: ${get.width}см. х ${get.weight}см.</span> <b>${stoneTop}кв.</b>`;
-    result.bottom.innerHTML = `<span>Лобік нижній: ${get.width}см. х ${get.weight}см.</span> <b>${stoneTop}кв.</b>`;
+    result.face1.innerHTML = `<b>${stoneFace}кв.</b>`;
+    result.face2.innerHTML = `<b>${stoneFace}кв.</b>`;
+    result.left.innerHTML = `<b>${stoneSide}кв.</b>`;
+    result.right.innerHTML = `<b>${stoneSide}кв.</b>`;
+    result.top.innerHTML = `<b>${stoneTop}кв.</b>`;
+    result.bottom.innerHTML = `<b>${stoneTop}кв.</b>`;
     result.general.innerHTML = `<b>${generalResult()}кв.</b>`
 })

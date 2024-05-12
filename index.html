@@ -4,45 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone Calculator v1.2</title>
+    <title>Stone Calculator v1.1</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>🗿 Stone calculator v1</h1>
+        <h1>🗿 Stone calculator v1.3</h1>
+        <input class='getArea' id="getWidth" type="number" placeholder="Ширина">
             <input class='getArea' id="getHeight" type="number" placeholder="Висота">
-            <input class='getArea' id="getWidth" type="number" placeholder="Ширина">
             <input class='getArea' id="getWeight" type="number" placeholder="Товщина">
         <button id="submitBtn" type="button">Розрахувати</button>
         <div class="info">
             <div class='info-item'>
-                <input type="checkbox" checked id="checkFace1">
-                <span class='info-item__text' id="resultFace1"></span>
+                <input class="custom-checkbox" type="checkbox" checked id="checkFace1">
+                <label for="checkFace1"></label>
+                <div class="info-item__text">
+                    <span class="info-item__size">
+                        <b>Лице 1</b>
+                        <span id="sizeFace1">немає даних</span>
+                    </span>
+                    <span class='info-item__result' id="resultFace1"></span>
+                </div>
             </div>
             <div class='info-item'>
-                <input type="checkbox" checked id="checkFace2">
-                <span class='info-item__text' id="resultFace2"></span>
+                <input class="custom-checkbox" type="checkbox" checked id="checkFace2">
+                <label for="checkFace2"></label>
+                <div class="info-item__text">
+                    <span class="info-item__size">
+                        <b>Лице 2</b>
+                        <span id="sizeFace2">немає даних</span>
+                    </span>
+                    <span class='info-item__result' id="resultFace2"></span>
+                </div>
             </div>
             <div class='info-item'>
-                <input type="checkbox" checked id="checkLeft">
-                <span class='info-item__text' id="resultLeft"></span>
+                <input class="custom-checkbox" type="checkbox" checked id="checkLeft">
+                <label for="checkLeft"></label>
+                <div class="info-item__text">
+                    <span class="info-item__size">
+                        <b>Боковий лобік 1</b>
+                        <span id="sizeLeft">немає даних</span>
+                    </span>
+                    <span class='info-item__result' id="resultLeft"></span>
+                </div>
             </div>
             <div class='info-item'>
-                <input type="checkbox" checked id="checkRight">
-                <span class='info-item__text' id="resultRight"></span>
+                <input class="custom-checkbox" type="checkbox" checked id="checkRight">
+                <label for="checkRight"></label>
+                <div class="info-item__text">
+                    <span class="info-item__size">
+                        <b>Боковий лобік 2</b>
+                        <span id="sizeRight">немає даних</span>
+                    </span>
+                    <span class='info-item__result' id="resultRight"></span>
+                </div>
             </div>
             <div class='info-item'>
-                <input type="checkbox" checked id="checkTop">
-                <span class='info-item__text' id="resultTop"></span>
+                <input class="custom-checkbox" type="checkbox" checked id="checkTop">
+                <label for="checkTop"></label>
+                <div class="info-item__text">
+                    <span class="info-item__size">
+                        <b>Верхній лобік</b>
+                        <span id="sizeTop">немає даних</span>
+                    </span>
+                    <span class='info-item__result' id="resultTop"></span>
+                </div>
             </div>
             <div class='info-item'>
-                <input type="checkbox" id="checkBottom">
-                <span class='info-item__text' id="resultBottom"></span>
+                <input class="custom-checkbox" type="checkbox" id="checkBottom">
+                <label for="checkBottom"></label>
+                <div class="info-item__text">
+                    <span class="info-item__size">
+                        <b>Боковий нижній</b>
+                        <span id="sizeBottom">немає даних</span>
+                    </span>
+                    <span class='info-item__result' id="resultBottom"></span>
+                </div>
             </div>
-            <div class='info-item'>
-                <span class='info-item__text' id="result"></span>
-            </div>
+            <span class='info-item__text' id="result"></span>
         </div>
     </div>
 </body>
