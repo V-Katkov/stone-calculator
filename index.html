@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🪨 Stone Calculator | v1.4</title>
+    <title>🪨 Stone Calculator | v1.5</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>🪨 Stone calculator v1.4</h1>
+        <h1>🪨 Stone calculator v1.5</h1>
         <div class="get-blocks">
-            <input class='getArea' id="getWidth" type="number" placeholder="Ширина">
-            <input class='getArea' id="getHeight" type="number" placeholder="Висота">
-            <input class='getArea' id="getWeight" type="number" placeholder="Товщина">
+            <div class="get-blocks__item">
+                <input class='getArea' id="getWidth" type="number">
+                <span>Ширина</span>
+            </div>
+            <div class="get-blocks__item">
+                <input class='getArea' id="getHeight" type="number">
+                <span>Висота</span>
+            </div>
+            <div class="get-blocks__item">
+                <input class='getArea' id="getWeight" type="number">
+                <span>Товщина</span>
+            </div>
         </div>
         <button id="submitBtn" type="button">Розрахувати</button>
         <div class="info">
@@ -78,7 +87,7 @@
                 <label for="checkBottom"></label>
                 <div class="info-item__text">
                     <span class="info-item__size">
-                        <b>Боковий нижній</b>
+                        <b>Нижній лобік</b>
                         <span id="sizeBottom">немає даних</span>
                     </span>
                     <span class='info-item__result' id="resultBottom"></span>
